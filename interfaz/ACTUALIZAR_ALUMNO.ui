@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_ACTUALIZAR_ALUMNO</class>
+ <widget class="QWidget" name="Form_ACTUALIZAR_ALUMNO">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>823</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ACTUALIZAR ALUMNO</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources_rc.qrc">
+    <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="toolTipDuration">
+   <number>-1</number>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}
+QPushButton
+{
+	background-color:#046799;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QComboBox
+{
+	background-color:#034263;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QGroupBox
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}</string>
+  </property>
+  <widget class="QPushButton" name="actualizar">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>780</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>ACTUALIZAR</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>40</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;Datos generales&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>300</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;Dirección&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>868</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="fecha_na">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="fecha_ins">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Fecha de inscripción(DD/MM/YYYY)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Sexo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Fecha de nacimiento(DD/MM/YYYY)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_7">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>CURP</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="curp">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QComboBox" name="sexo">
+          <item>
+           <property name="text">
+            <string>H</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>M</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Nombre(s)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Apellido Materno</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="nombre">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="apellido_pat">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="apellido_mat">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Apellido Paterno</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Grado academico</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>¿Esta inscrito?</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_10">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>¿Es becado?</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_11">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Tipo de sangre</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QComboBox" name="grado">
+          <item>
+           <property name="text">
+            <string>PRIMERO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SEGUNDO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TERCERO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CUARTO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>QUINTO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SEXTO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SEPTIMO</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="inscripcion">
+          <item>
+           <property name="text">
+            <string>No</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Si</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="beca">
+          <item>
+           <property name="text">
+            <string>No</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Si</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QComboBox" name="sangre">
+          <item>
+           <property name="text">
+            <string>A+</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A-</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B+</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B-</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>AB+</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>AB-</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>O+</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>O-</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <widget class="QComboBox" name="seguro">
+          <item>
+           <property name="text">
+            <string>No</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Si</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>¿Su seguro esta activo?</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QComboBox" name="carrera">
+          <item>
+           <property name="text">
+            <string>ENFERMERIA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NUTRICIÓN</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LABORATORIO CLINICO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MECANICA AUTOMOTRIZ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>PROGRAMACIÓN WEB</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ELECTRICISTA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MECANICO ELECTRICO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TURISMO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DIBUJO INDUSTRIAL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TRABAJO SOCIAL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>GASTRONOMIA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SISTEMAS COMPUTACIONALES</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ADMINISTRACIÓN CONTABLE</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>REHABILITACION CLINICA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DISEÑO DE IMAGEN</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>INGLES</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ACTIVIDAD FISICA Y DEPORTE</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DISEÑO GRAFICO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DIBUJO TECNICO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LABORATORIO DENTAL</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_14">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>¿Enfermedad cronica?</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_13">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>¿Discapacidad?</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="cronica">
+          <item>
+           <property name="text">
+            <string>No</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Si</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_15">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Número de seguridad social</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="discapacidad">
+          <item>
+           <property name="text">
+            <string>No</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Si</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="NSS">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="label_17">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Carrera</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLineEdit" name="CCT">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label_18">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Ingrese el CCT de la escuela</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>325</y>
+     <width>691</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_21">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Codigo Postal</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_25">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Alcadia o Municipio</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="label_24">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>No. Interior</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_22">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Calle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="calle">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_23">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>No. Exterior</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="CP">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_20">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Colonia</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLineEdit" name="interior">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="colonia">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_26">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Estado</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="exterior">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="alcaldia">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="estado">
+      <item>
+       <property name="text">
+        <string>ESTADO DE MEXICO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CIUDAD DE MEXICO</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_27">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>430</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;Tutor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>470</y>
+     <width>413</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_9">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_28">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nombre(s)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_29">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apellido Materno</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="nombre_2">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="apellido_pat_tutor">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="apellido_mat_tutor">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_30">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apellido Paterno</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>470</y>
+     <width>72</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_10">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_31">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sexo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="sexo_2">
+      <item>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>M</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>540</y>
+     <width>891</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 255);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>155</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>NOMBRE</string>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO PATERNO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO MATERNO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SEXO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>FECHA DE NACIMIENTO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>FECHA DE INSCRIPCIÓN</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CURP</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GRADO ACADEMICO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CARRERA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>INSCRITO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BECADO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SEGURO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TIPO DE SANGRE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DISCAPACIDAD</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ENFERMEDADES CRONICAS</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NUMERO DE SEGURO SOCIAL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ESTADO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>COLONIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ALCALDIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CODIGO POSTAL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CALLE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>PLANTEL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NOMBRE TUTOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO PATERNO TUTOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO MATERNO TUTOR</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>283</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ingrese el curp:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="curp_nuevo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>41</y>
+     <width>283</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_33">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>0</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;ACTUALIZAR ALUMNO&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

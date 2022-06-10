@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_ELIMINAR_ESCUELA</class>
+ <widget class="QWidget" name="Form_ELIMINAR_ESCUELA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ELIMINAR ESCUELA</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources_rc.qrc">
+    <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}
+QPushButton
+{
+	background-color:#046799;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QComboBox
+{
+	background-color:#034263;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QGroupBox
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}</string>
+  </property>
+  <widget class="QPushButton" name="eliminar">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>50</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>0</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;ELIMINAR ESCUELA&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>891</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 255);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>155</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>CCT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>INSTITUCIÓN</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>PLANTEL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TELEFONO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>WEB</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CORREO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DOMINIO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>COLONIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CODIGO POSTAL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CALLE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NO.INTERIOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NO.EXTERIOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ALCALDIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ESTADO</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>33</y>
+     <width>261</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>INGRESE EL CCT DE LA ESCUELA A ELIMINAR:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="CCT">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>55</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

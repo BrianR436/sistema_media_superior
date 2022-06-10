@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="iconos">
+    <file>recursos/Logo-sep2007.jpg</file>
+    <file>recursos/sep.png</file>
+    <file>recursos/iniciar-sesion.png</file>
+    <file>recursos/usuario.png</file>
+    <file>recursos/gratis-png-logo-servicios-educativos-de-quintana-roo-secretaria-de-la-marca-de-educacion-publica-universidad-abierta-y-distancia-de-mexico-logo-sep-puebla-thumbnail.png</file>
+    <file>recursos/boton-actualizar.png</file>
+    <file>recursos/boton-agregar.png</file>
+    <file>recursos/conocimiento.png</file>
+    <file>recursos/consulta.png</file>
+    <file>recursos/eliminar.png</file>
+  </qresource>
+</RCC>

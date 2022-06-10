@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form1</class>
+ <widget class="QWidget" name="Form1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ELIMNAR ALUMNO</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources_rc.qrc">
+    <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}
+QPushButton
+{
+	background-color:#046799;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QComboBox
+{
+	background-color:#034263;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QGroupBox
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}</string>
+  </property>
+  <widget class="QPushButton" name="insertar">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>67</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>891</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QTableWidget" name="tablaeliminar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 255);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>155</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>NOMBRE</string>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO PATERNO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO MATERNO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SEXO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>FECHA DE NACIMIENTO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>FECHA DE INSCRIPCIÓN</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CURP</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GRADO ACADEMICO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CARRERA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>INSCRITO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BECADO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SEGURO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TIPO DE SANGRE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DISCAPACIDAD</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ENFERMEDADES CRONICAS</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NUMERO DE SEGURO SOCIAL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ESTADO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>COLONIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ALCALDIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CODIGO POSTAL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CALLE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>PLANTEL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NOMBRE TUTOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO PATERNO TUTOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO MATERNO TUTOR</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>41</y>
+     <width>151</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>INGRESE EL CURP:                    </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="curp">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>65</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>10</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>ELIMINAR ALUMNO</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

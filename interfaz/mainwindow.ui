@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QMainWindow" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>556</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ESCUELAS MEDIA SUPERIOR</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources_rc.qrc">
+    <normaloff>:/iconos/recursos/conocimiento.png</normaloff>:/iconos/recursos/conocimiento.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}
+QPushButton
+{
+	background-color:#046799;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QComboBox
+{
+	background-color:#034263;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QLabel
+{
+	background-color:#635303;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+QMenu
+{
+	background-color:#046799;
+	color:#FFFFFF;
+	border-color:#000000;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>531</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="2">
+      <widget class="QPushButton" name="actualizar_d">
+       <property name="text">
+        <string>Actualizar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="eliminar_d">
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 700 13pt &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;ALUMNO&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="insertar_a">
+       <property name="text">
+        <string>Insertar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="eliminar_a">
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="eliminar_t">
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="insertar_e">
+       <property name="text">
+        <string>Insertar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="consultar_d">
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="consultar_a">
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="eliminar_e">
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="actualizar_t">
+       <property name="text">
+        <string>Actualizar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="consultar_t">
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="actualizar_e">
+       <property name="text">
+        <string>Actualizar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="insertar_t">
+       <property name="text">
+        <string>Insertar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="insertar_d">
+       <property name="text">
+        <string>Insertar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 700 13pt &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;ESCUELA&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">font: 700 13pt &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;TUTOR&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">font: 700 13pt &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;DIRECCIÓN&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="actualizar_a">
+       <property name="text">
+        <string>Actualizar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="consultar_e">
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_rc.qrc">
+         <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>531</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 13pt &quot;Unispace&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;ESCUELAS MEDIA SUPERIOR&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>556</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTABLAS">
+    <property name="title">
+     <string>TABLAS</string>
+    </property>
+    <widget class="QMenu" name="menuALUMNO">
+     <property name="title">
+      <string>ALUMNO</string>
+     </property>
+     <addaction name="actionINSERTAR"/>
+     <addaction name="actionELIMINAR"/>
+     <addaction name="actionACTUALIZAR"/>
+     <addaction name="actionCONSULTAR"/>
+    </widget>
+    <widget class="QMenu" name="menuESCUELA">
+     <property name="title">
+      <string>ESCUELA</string>
+     </property>
+     <addaction name="actionINSERTAR_2"/>
+     <addaction name="actionELIMINAR_2"/>
+     <addaction name="actionACTUALIZAR_2"/>
+     <addaction name="actionCONSULTAR_2"/>
+    </widget>
+    <widget class="QMenu" name="menuTUTOR">
+     <property name="title">
+      <string>TUTOR</string>
+     </property>
+     <addaction name="actionINSERTAR_3"/>
+     <addaction name="actionELIMINAR_3"/>
+     <addaction name="actionACTUALIZAR_3"/>
+     <addaction name="actionCONSULTAR_3"/>
+    </widget>
+    <widget class="QMenu" name="menuDIRECCI_N">
+     <property name="title">
+      <string>DIRECCIÓN</string>
+     </property>
+     <addaction name="actionINSERTAR_4"/>
+     <addaction name="actionELIMINAR_4"/>
+     <addaction name="actionACTUALIZAR_4"/>
+     <addaction name="actionCONSULTAR_4"/>
+    </widget>
+    <addaction name="menuALUMNO"/>
+    <addaction name="menuESCUELA"/>
+    <addaction name="menuTUTOR"/>
+    <addaction name="menuDIRECCI_N"/>
+   </widget>
+   <addaction name="menuTABLAS"/>
+  </widget>
+  <action name="actionINSERTAR">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+   </property>
+   <property name="text">
+    <string>INSERTAR</string>
+   </property>
+  </action>
+  <action name="actionELIMINAR">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+  </action>
+  <action name="actionACTUALIZAR">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ACTUALIZAR</string>
+   </property>
+  </action>
+  <action name="actionCONSULTAR">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+   </property>
+   <property name="text">
+    <string>CONSULTAR</string>
+   </property>
+  </action>
+  <action name="actionINSERTAR_2">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+   </property>
+   <property name="text">
+    <string>INSERTAR</string>
+   </property>
+  </action>
+  <action name="actionELIMINAR_2">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+  </action>
+  <action name="actionACTUALIZAR_2">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ACTUALIZAR</string>
+   </property>
+  </action>
+  <action name="actionCONSULTAR_2">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+   </property>
+   <property name="text">
+    <string>CONSULTAR</string>
+   </property>
+  </action>
+  <action name="actionINSERTAR_3">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+   </property>
+   <property name="text">
+    <string>INSERTAR</string>
+   </property>
+  </action>
+  <action name="actionELIMINAR_3">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+  </action>
+  <action name="actionACTUALIZAR_3">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ACTUALIZAR</string>
+   </property>
+  </action>
+  <action name="actionCONSULTAR_3">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+   </property>
+   <property name="text">
+    <string>CONSULTAR</string>
+   </property>
+  </action>
+  <action name="actionINSERTAR_4">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-agregar.png</normaloff>:/iconos/recursos/boton-agregar.png</iconset>
+   </property>
+   <property name="text">
+    <string>INSERTAR</string>
+   </property>
+  </action>
+  <action name="actionELIMINAR_4">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+  </action>
+  <action name="actionACTUALIZAR_4">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/boton-actualizar.png</normaloff>:/iconos/recursos/boton-actualizar.png</iconset>
+   </property>
+   <property name="text">
+    <string>ACTUALIZAR</string>
+   </property>
+  </action>
+  <action name="actionCONSULTAR_4">
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/consulta.png</normaloff>:/iconos/recursos/consulta.png</iconset>
+   </property>
+   <property name="text">
+    <string>CONSULTAR</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

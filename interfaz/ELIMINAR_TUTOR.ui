@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_ELIMINAR_TUTOR</class>
+ <widget class="QWidget" name="Form_ELIMINAR_TUTOR">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ELIMINAR TUTOR</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources_rc.qrc">
+    <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}
+QPushButton
+{
+	background-color:#046799;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QComboBox
+{
+	background-color:#034263;
+	color:#FFFFFF;
+	border-color:#000000;
+}
+
+QGroupBox
+{
+	background-color:#1E343F;
+	color:#ffffff;
+	border-color:#000000;
+}</string>
+  </property>
+  <widget class="QPushButton" name="eliminar">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>380</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources_rc.qrc">
+     <normaloff>:/iconos/recursos/eliminar.png</normaloff>:/iconos/recursos/eliminar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_27">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>30</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;Tutor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>70</y>
+     <width>413</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_9">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_28">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nombre(s)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_29">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apellido Materno</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="nombre_2">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="apellido_pat_tutor">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="apellido_mat_tutor">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_30">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apellido Paterno</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>891</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 255);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>155</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>NOMBRE</string>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>false</kerning>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO PATERNO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APELLIDO MATERNO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SEXO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>COLONIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CODIGO POSTAL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CALLE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NO.EXTERIOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NO.INTERIOR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ALCALDIA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ESTADO</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_33">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>0</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;ELIMINAR TUTOR&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
